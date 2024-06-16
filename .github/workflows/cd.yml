@@ -1,5 +1,5 @@
 on: push
-name: FTP
+name: CD FTP
 jobs:
   web-deploy:
     name: Despliegue FTP
@@ -11,5 +11,5 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
         server:   us-east-1.sftpcloud.io
-        username: lfibarrao
-        password: 8wj5hVmm0UKnopIhKcGYdSoqfzhFh8iU
+        username: 607254f43fdb4174a698db68670c9698
+        password: 6eEny2QGSHYW6asgaGdvPQ9bigOpTmE3
