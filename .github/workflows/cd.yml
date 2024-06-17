@@ -13,4 +13,5 @@ jobs:
         server:   dex4f.ca-central-1.sftpcloud.io
         username: 607254f43fdb4174a698db68670c9698
         password: 6eEny2QGSHYW6asgaGdvPQ9bigOpTmE3
-        local-dir: ./tests/
+        local-dir: ./src/
+        server-dir: ./app_web/src/
