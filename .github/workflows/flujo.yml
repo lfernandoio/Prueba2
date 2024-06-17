@@ -3,7 +3,7 @@ on:
   push:
     branches: ["main"]
 jobs:
-    job1:
+    CI:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v3
@@ -13,8 +13,8 @@ jobs:
               with:
                 bootstrap: vendor/autoload.php
                 configuration: phpunit.xml
-    job2:
-        needs: job1
+    CD:
+        needs: CI
         runs-on: ubuntu-latest
         steps:
             - name: Get latest code
