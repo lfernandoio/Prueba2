@@ -4,27 +4,27 @@ on:
     branches: [ "main" ]
 jobs:
     job-1:
-        build:
-            runs-on: ubuntu-latest
-            steps:
-                - uses: actions/checkout@v3
-                - uses: php-actions/composer@v6
-                - name: PHPUnit 
-                - uses: php-actions/phpunit@master
+            build:
+                runs-on: ubuntu-latest
+                steps:
+                    - uses: actions/checkout@v3
+                    - uses: php-actions/composer@v6
+                    - name: PHPUnit 
+                    - uses: php-actions/phpunit@master
 with:
-                  bootstrap: vendor/autoload.php
-                  configuration: phpunit.xml
+        bootstrap: vendor/autoload.php
+        configuration: phpunit.xml
     job-2:
-        web-deploy:
-        name: Despliegue FTP
-        runs-on: ubuntu-latest
-        needs: job1
-        steps:
-        uses: actions/checkout@v3          
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
-        with:
-        server:   dex4f.ca-central-1.sftpcloud.io
-        username: 607254f43fdb4174a698db68670c9698
-        password: 6eEny2QGSHYW6asgaGdvPQ9bigOpTmE3
-        local-dir: ./src/
-        server-dir: ./app_web/src/
+            web-deploy:
+            name: Despliegue FTP
+            runs-on: ubuntu-latest
+            needs: job1
+            steps:
+            uses: actions/checkout@v3          
+            uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+            with:
+            server:   dex4f.ca-central-1.sftpcloud.io
+            username: 607254f43fdb4174a698db68670c9698
+            password: 6eEny2QGSHYW6asgaGdvPQ9bigOpTmE3
+            local-dir: ./src/
+            server-dir: ./app_web/src/
