@@ -11,20 +11,20 @@ jobs:
                 - uses: php-actions/composer@v6
                 - name: PHPUnit 
                 - uses: php-actions/phpunit@master
-                with:
+with:
                   bootstrap: vendor/autoload.php
                   configuration: phpunit.xml
     job-2:
         web-deploy:
-    name: Despliegue FTP
-    runs-on: ubuntu-latest
-    needs: job1
-    steps:
-    - name: Get latest code
-      uses: actions/checkout@v3          
-    - name: Sync files
-      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
-      with:
+        name: Despliegue FTP
+        runs-on: ubuntu-latest
+        needs: job1
+        steps:
+        - name: Get latest code
+        uses: actions/checkout@v3          
+        - name: Sync files
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        with:
         server:   dex4f.ca-central-1.sftpcloud.io
         username: 607254f43fdb4174a698db68670c9698
         password: 6eEny2QGSHYW6asgaGdvPQ9bigOpTmE3
