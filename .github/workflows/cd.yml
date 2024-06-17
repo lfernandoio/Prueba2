@@ -1,6 +1,6 @@
 name: CD FTP
 on:
-  pull:
+  push:
     branches: [ "Desarrollo" ]
 jobs:
   web-deploy:
