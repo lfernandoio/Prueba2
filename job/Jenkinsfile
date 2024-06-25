@@ -14,7 +14,7 @@ pipeline
         {
             steps
             {
-                sh "echo phpunit --version"
+                bat ""echo "Fernando"""
             }
         }
     }
