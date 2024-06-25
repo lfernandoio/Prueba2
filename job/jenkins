@@ -1,0 +1,13 @@
+pipeline
+{
+    stages
+    {
+        stage ("Desde GIT")
+        {
+            steps 
+            {
+                echo "Primer JOB desde GIT"
+            }
+        }
+    }
+}
