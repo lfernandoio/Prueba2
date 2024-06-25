@@ -14,7 +14,7 @@ pipeline
         {
             steps
             {
-                bat ""echo "Fernando"""
+                cmd ""echo "Fernando"""
             }
         }
     }
