@@ -14,7 +14,7 @@ pipeline
         {
             steps
             {
-                powershell ""echo "Fernando"""
+                sh ""echo "Fernando"""
             }
         }
     }
