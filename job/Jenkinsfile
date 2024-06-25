@@ -14,7 +14,7 @@ pipeline
         {
             steps
             {
-                bat "echo phpunit --Version"
+                bat "phpunit --Version"
             }
         }
     }
