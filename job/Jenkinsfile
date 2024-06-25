@@ -14,7 +14,7 @@ pipeline
         {
             steps
             {
-                sh "phpunit --version"
+                sh "php --version"
             }
         }
     }
