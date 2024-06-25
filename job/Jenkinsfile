@@ -14,7 +14,7 @@ pipeline
         {
             steps
             {
-               sh """.\vendor\bin\phpunit  --testsuite Facturacion"""
+               bat "cmd .\vendor\bin\phpunit  --testsuite Facturacion"
             }
         }
     }
