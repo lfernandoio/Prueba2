@@ -14,7 +14,7 @@ pipeline
         {
             steps
             {
-                sh "php --version"
+                sh "echo phpunit --version"
             }
         }
     }
