@@ -1,0 +1,28 @@
+pipeline
+{
+    agent any
+    stages 
+    {
+        stage ("Escenario 1") 
+        {
+            steps 
+            {
+                echo "Tarea 1"
+            }
+        }
+        stage ("Escenario 2") 
+        {
+            steps 
+            {
+                echo "Tarea 2"
+            }
+        }
+        stage ("Escenario 3") 
+        {
+            steps 
+            {
+                echo "Tarea 3"
+            }
+        }
+    }
+}
