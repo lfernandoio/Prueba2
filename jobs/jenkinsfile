@@ -17,12 +17,5 @@ pipeline
                 echo "Tarea 2"
             }
         }
-        stage ("Escenario 3") 
-        {
-            steps 
-            {
-                echo "Tarea 3"
-            }
-        }
     }
 }
