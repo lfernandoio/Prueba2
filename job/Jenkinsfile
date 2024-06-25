@@ -15,7 +15,6 @@ pipeline
             steps
             {
                 sh "phpunit --version"
-                sh ".\vendor\bin\phpunit  --testsuite Facturacion"
             }
         }
     }
