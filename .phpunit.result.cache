@@ -1,1 +1,1 @@
-{"version":1,"defects":{"primer_Test::test_Primero":7,"operacion_Test::testuno":7},"times":{"primer_Test::test_Primero":0.008,"operacion_Test::testFactorial":0.005,"operacion_Test::testuno":0,"operacion_Test::testdos":0}}
+{"version":1,"defects":{"primer_Test::test_Primero":7,"operacion_Test::testuno":7},"times":{"primer_Test::test_Primero":0.008,"operacion_Test::testFactorial":0.003,"operacion_Test::testuno":0,"operacion_Test::testdos":0}}
