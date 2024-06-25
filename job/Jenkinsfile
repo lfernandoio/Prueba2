@@ -14,7 +14,7 @@ pipeline
         {
             steps
             {
-                cmd ""echo "Fernando"""
+                sh ""echo "Fernando"""
             }
         }
     }
