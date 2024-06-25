@@ -10,5 +10,27 @@ pipeline
                 echo "Primer JOB desde GIT"
             }
         }
+        stage ("Prueba Unitario")
+        {
+            steps
+            {
+                echo phpunit --Version
+            }
+        }
+    }
+    post
+    {
+        always
+        {
+            echo "Siempre se Ejecuta independiente del resultado"
+        }
+        success
+        {
+            echo "Se ejecuta si la tarea fue satifatoria"
+        }
+        failure
+        {
+            echo "Se ejecuta si hay error"
+        }
     }
 }
