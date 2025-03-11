@@ -7,7 +7,7 @@ pipeline
         {
             steps 
             {
-                sh script: 'php --version'
+                bat cmd: 'php --version'
             }
         }
         stage ("Escenario 2") 
