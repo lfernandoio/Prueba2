@@ -7,14 +7,14 @@ pipeline
         {
             steps 
             {
-                cmd 'php --version'
+                sh script: 'php --version'
             }
         }
         stage ("Escenario 2") 
         {
             steps 
             {
-                cmd '.\vendor\bin\phpunit  --testsuite Facturacion'
+                sh script: '.\vendor\bin\phpunit  --testsuite Facturacion'
             }
         }
     }
