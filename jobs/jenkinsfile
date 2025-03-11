@@ -7,7 +7,7 @@ pipeline
         {
             steps 
             {
-                echo "Tarea 1"
+                sh 'php --version'
             }
         }
         stage ("Escenario 2") 
