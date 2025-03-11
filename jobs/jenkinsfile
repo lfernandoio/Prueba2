@@ -7,14 +7,14 @@ pipeline
         {
             steps 
             {
-                sh 'php --version'
+                bat 'php --version'
             }
         }
         stage ("Escenario 2") 
         {
             steps 
             {
-                echo "Tarea 2"
+                bat '.\vendor\bin\phpunit  --testsuite Facturacion'
             }
         }
     }
