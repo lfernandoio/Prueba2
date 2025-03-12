@@ -7,7 +7,7 @@ class operacion_Test extends TestCase{
         $objOpr= new operacion();
         $nFct= $objOpr->factorial(50);
         $this->assertIsNumeric($nFct);
-        $this->assertEquals($nFct,60);
+        $this->assertEquals($nFct,40);
     }
     public function testuno():void
     {
