@@ -7,7 +7,7 @@ pipeline
         {
             steps 
             {
-                echo "Hola"
+                echo "Hola Fernando"
             }
         }
         stage ("Escenario 2") 
